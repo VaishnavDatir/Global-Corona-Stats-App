@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--        To Change Status Bar Colour-->
+        <item name="android:statusBarColor">@color/bgStartColour</item>
+
+        <!--        To Change Navigation Bar Colour-->
+        <item name="android:navigationBarColor">@color/bgEndColour</item>
+    </style>
+
+</resources>

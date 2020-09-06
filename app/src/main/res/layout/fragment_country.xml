@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00FBFBFB"
+    tools:context=".fargment.CountryFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingVertical="5dp">
+
+        <EditText
+            android:id="@+id/et_Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5785E3EF"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableTint="#FFFFFF"
+            android:drawablePadding="6dp"
+            android:elevation="0dp"
+            android:fontFamily="@font/poppins"
+            android:hint=" Search for Country"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="3dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#DDDADA"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_NF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_Search"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:src="@drawable/img_asset_globalmsg"
+            android:tint="#CEDFDF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="No Country Found"
+            android:textColor="#CEDFDF"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCountries"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarFadeDuration="750"
+        android:scrollbarStyle="insideInset"
+        android:layout_below="@id/rl_Search" />
+
+<!--
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_TrackCountries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/bgStartColour"
+        android:contentDescription="Track Countries"
+        android:src="@drawable/img_asset_global"
+        android:tint="#FFFFFF"
+        app:elevation="3dp"
+        app:maxImageSize="43dp"
+        app:rippleColor="@color/bgEndColour" />
+
+    -->
+</RelativeLayout>
